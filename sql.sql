@@ -115,3 +115,30 @@ DROP TABLE Conseiller;
 
 
 ----///////////////B. Requêtes Spécifiques (Obligatoires)///////////////::
+
+--Niveau Simple :
+--1:
+
+SELECT nom, prenom
+FROM Client
+ORDER BY nom ASC, prenom ASC;
+
+--2:
+SELECT *
+FROM Compte
+WHERE solde > 5000;
+
+--3:
+SELECT iban
+FROM Compte
+WHERE type = 'Epargne';
+
+--4:
+SELECT *
+FROM Transactions
+WHERE date_transaction BETWEEN '2024-01-01' AND '2024-12-31';
+--5:
+SELECT telephone
+FROM Client
+WHERE id_client = 10;
+
